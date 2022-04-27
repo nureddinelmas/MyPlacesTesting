@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/myPlaceFragment">
+
+    <fragment
+        android:id="@+id/myPlaceFragment"
+        android:name="com.nureddinelmas.myplacetesting.view.MyPlaceFragment"
+        android:label="MyPlaceFragment" >
+        <action
+            android:id="@+id/action_myPlaceFragment_to_placeDetailsFragment"
+            app:destination="@id/placeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeDetailsFragment"
+        android:name="com.nureddinelmas.myplacetesting.view.PlaceDetailsFragment"
+        android:label="PlaceDetailsFragment" >
+        <action
+            android:id="@+id/action_placeDetailsFragment_to_imageApiFragment"
+            app:destination="@id/imageApiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageApiFragment"
+        android:name="com.nureddinelmas.myplacetesting.view.ImageApiFragment"
+        android:label="ImageApiFragment" />
+</navigation>
